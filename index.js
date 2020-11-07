@@ -16,8 +16,8 @@ const BotName = 'B̺͆o̺͆t̺͆P͢i͢n͢͢n͢S͢k͢u͢y͢y͢ 🤖'; // Nama Bot
 const instagramlu = 'https://instagram.com/pinnskuyy'; // Nama Instagramlu cok
 const whatsapplu = 'httss://wa.me/6285889074523'; // Nomor whatsapplu cok
 const kapanbotaktif = '24 Jam'; // Kapan bot lu aktif
-const grupch1 = 'https://chat.whatsapp.com/FsAlnxqz6y2BhCQi5ayCLG'; // OFFICIAL GRUP LU 1
-const grupch2 = 'https://chat.whatsapp.com/KLW3UlFfeaH36Ucm5zRfCz'; // OFFICIAL GRUP LU 2
+const grupch1 = 'https://chat.whatsapp.com/IMx83x7wr7mGKxwUsjuNNd'; // OFFICIAL GRUP LU 1
+const grupch2 = 'https://chat.whatsapp.com/GpsruXGaloHJLPXi0SFiSQ'; // OFFICIAL GRUP LU 2
 //
 const
 {
@@ -48,7 +48,7 @@ conn.on('qr', qr =>
    {
       small: true
    });
-   console.log(`[ ${moment().format("HH:mm:ss")} ] Scan kode qr mu cok!`);
+   console.log(`[ ${moment().format("HH:mm:ss")} ] Scan kode qr mu cok! @pinnskuyy`);
 });
 
 conn.on('credentials-updated', () =>
@@ -63,11 +63,11 @@ fs.existsSync('./session.json') && conn.loadAuthInfo('./session.json')
 //conn.connectOptions.agent = ProxyAgent ('http://1.0.180.120:8080')
 conn.connect();
 
-conn.on('user-presence-update', json => console.log(`[ ${moment().format("HH:mm:ss")} ] => bot by @bintang_nur_pradana`))
+conn.on('user-presence-update', json => console.log(`[ ${moment().format("HH:mm:ss")} ] => bot by @pinnskuyy`))
 conn.on('message-status-update', json =>
 {
    const participant = json.participant ? ' (' + json.participant + ')' : '' // participant exists when the message is from a group
-   console.log(`[ ${moment().format("HH:mm:ss")} ] => bot by @bintang_nur_pradana`)
+   console.log(`[ ${moment().format("HH:mm:ss")} ] => bot by @pinnskuyy`)
 })
 
 conn.on('message-new', async(m) =>
@@ -233,22 +233,22 @@ axios.get('https://api.banghasan.com/quran/format/json/acak').then((res) => {
 })
 }
 else if (text == 'assalamualaikum'){
-conn.sendMessage(id, '3aalaikumsalam, ada yang bisa saya bantu? kalo bingung ketik #help ya say..' ,MessageType.text);
+conn.sendMessage(id, 'waalaikumsalam, ada yang bisa saya bantu? kalo bingung ketik #help ya say.. Jangan Lupa Follow IG OwnerBot Ya 🔜 https://instagram.com/pinnskuyy' ,MessageType.text);
 }
 else if (text == 'salam'){
-conn.sendMessage(id, 'Waalaikumsalam, ada yang bisa saya bantu? kalo bingung ketik #help ya say..' ,MessageType.text);
+conn.sendMessage(id, 'Waalaikumsalam, ada yang bisa saya bantu? kalo bingung ketik #help ya say. Jangan Lupa Follow IG OwnerBot Ya 🔜 https://instagram.com/pinnskuyy' ,MessageType.text);
 }
 else if (text == 'asalamualaikum'){
-conn.sendMessage(id, 'Waalaikumsalam, ada yang bisa saya bantu? kalo bingung ketik #help ya say..' ,MessageType.text);
+conn.sendMessage(id, 'Waalaikumsalam, ada yang bisa saya bantu? kalo bingung ketik #help ya say.. Jangan Lupa Follow IG OwnerBot Ya 🔜 https://instagram.com/pinnskuyy' ,MessageType.text);
 }
 else if (text == 'Assalamualaikum'){
-conn.sendMessage(id, 'Waalaikumsalam, ada yang bisa saya bantu? kalo bingung ketik #help ya say..' ,MessageType.text);
+conn.sendMessage(id, 'Waalaikumsalam, ada yang bisa saya bantu? kalo bingung ketik #help ya say.. Jangan Lupa Follow IG OwnerBot Ya 🔜 https://instagram.com/pinnskuyy' ,MessageType.text);
 }
 else if (text == 'p'){
-conn.sendMessage(id, 'Ya?, ada yang bisa saya bantu? kalo bingung ketik #help ya say..' ,MessageType.text);
+conn.sendMessage(id, 'Ya?, ada yang bisa saya bantu? kalo bingung ketik #help ya say.. Jangan Lupa Follow IG OwnerBot Ya 🔜 https://instagram.com/pinnskuyy' ,MessageType.text);
 }
 else if (text == 'P'){
-conn.sendMessage(id, 'Ya?, ada yang bisa saya bantu? kalo bingung ketik #help ya say..' ,MessageType.text);
+conn.sendMessage(id, 'Ya?, ada yang bisa saya bantu? kalo bingung ketik #help ya say.. Jangan Lupa Follow IG OwnerBot Ya 🔜 https://instagram.com/pinnskuyy' ,MessageType.text);
 }
 else if (text == 'halo'){
 conn.sendMessage(id, 'Ya?, ada yang bisa saya bantu? kalo bingung ketik #help ya say..' ,MessageType.text);
@@ -295,14 +295,32 @@ conn.sendMessage(id, 'Ya?, ada yang bisa saya bantu? kalo bingung ketik #help ya
 else if (text == 'cuy'){
 conn.sendMessage(id, 'Ya?, ada yang bisa saya bantu? kalo bingung ketik #help ya say..' ,MessageType.text);
 }
+else if (text == '#stiker'){
+conn.sendMessage(id, 'Maaf Saat Ini Bot Tidak Bisa Menggunakan Fitur sticker, Tolong Donasi Ke wa.me//6285889074523 , Dan Jangan Lupa Follow IG OwnerBot https://instagram.com/pinnskuyy' ,MessageType.text);
+}
+else if (text == '#sticker'){
+conn.sendMessage(id, 'Maaf Saat Ini Bot Tidak Bisa Menggunakan Fitur sticker, Tolong Donasi Ke wa.me//6285889074523 , Dan Jangan Lupa Follow IG OwnerBot https://instagram.com/pinnskuyy' ,MessageType.text);
+}
 else if (text == 'euy'){
 conn.sendMessage(id, 'Ya?, ada yang bisa saya bantu? kalo bingung ketik #help ya say..' ,MessageType.text);
 }
 else if (text == 'makasi'){
-conn.sendMessage(id, 'Sama sama, semoga harimu menyenangkan :)' ,MessageType.text);
+conn.sendMessage(id, 'Sama sama, semoga harimu menyenangkan :) JANGAN LUPA FOLLOW IG OwnerBot Ya 🔜 https://instagram.com/pinnskuyy' ,MessageType.text);
 }
-else if (text == 'Makasi'){
-conn.sendMessage(id, 'Sama sama, semoga harimu menyenangkan :)' ,MessageType.text);
+else if (text == 'Makasih'){
+conn.sendMessage(id, 'Sama sama, semoga harimu menyenangkan :) Jangan Lupa Follow IG OwnerBot Ya 🔜 https://instagram.com/pinnskuyy' ,MessageType.text);
+}
+else if (text == 'Tq'){
+conn.sendMessage(id, 'Sama sama, semoga harimu menyenangkan :) Jangan Lupa Follow IG OwnerBot Ya 🔜 https://instagram.com/pinnskuyy' ,MessageType.text);
+}
+else if (text == 'tq'){
+conn.sendMessage(id, 'Sama sama, semoga harimu menyenangkan :) Jangan Lupa Follow IG OwnerBot Ya 🔜 https://instagram.com/pinnskuyy' ,MessageType.text);
+}
+else if (text == 'thx'){
+conn.sendMessage(id, 'Sama sama, semoga harimu menyenangkan :) Jangan Lupa Follow IG OwnerBot Ya 🔜 https://instagram.com/pinnskuyy' ,MessageType.text);
+}
+else if (text == 'Thx'){
+conn.sendMessage(id, 'Sama sama, semoga harimu menyenangkan :) Jangan Lupa Follow IG OwnerBot Ya 🔜 https://instagram.com/pinnskuyy' ,MessageType.text);
 }
 else if (text == 'makasih'){
 conn.sendMessage(id, 'Sama sama, semoga harimu menyenangkan :)' ,MessageType.text);
@@ -508,29 +526,8 @@ var tampilWaktu = "JAM: " + jam + ":" + menit + ":" + detik;
 conn.sendMessage(id, info.info(id, BotName, corohelp, tampilTanggal, tampilWaktu, instagramlu, whatsapplu, kapanbotaktif, grupch1, grupch2) ,MessageType.text);
 }
 else if (text == '#ptl'){
-conn.sendMessage(id, 'kirim #ptl cewek/cowok\n\nContoh: #ptl cewek' ,MessageType.text);
-}
-   if (messageType == 'imageMessage')
-   {
-      let caption = imageMessage.caption.toLocaleLowerCase()
-      const buffer = await conn.downloadMediaMessage(m) // to decrypt & use as a buffer
-      if (caption == '#sticker')
-      {
-         const stiker = await conn.downloadAndSaveMediaMessage(m) // to decrypt & save to file
-
-         const
-         {
-            exec
-         } = require("child_process");
-         exec('cwebp -q 50 ' + stiker + ' -o temp/' + jam + '.webp', (error, stdout, stderr) =>
-         {
-            let stik = fs.readFileSync('temp/' + jam + '.webp')
-            conn.sendMessage(id, stik, MessageType.sticker)
-         });
-      }
-   }
-
-   if (messageType === MessageType.text)
+conn.sendMessage(id, 'Baca Yang Bener Cok! kirim #ptl cewek/cowok\n\nContoh: #ptl cewek' ,MessageType.text)
+  if (messageType === MessageType.text)
    {
       let is = m.message.conversation.toLocaleLowerCase()
 
