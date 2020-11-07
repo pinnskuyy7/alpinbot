@@ -48,7 +48,7 @@ conn.on('qr', qr =>
    {
       small: true
    });
-   console.log(`[ ${moment().format("HH:mm:ss")} ] Scan kode qr mu cok! @pinnskuyy`);
+   console.log(`[ ${moment().format("HH:mm:ss")} ] Scan kode qr mu cok!`);
 });
 
 conn.on('credentials-updated', () =>
